@@ -1,0 +1,128 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <title>3As</title>
+
+        <!-- load stylesheets -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400">  <!-- Google web font "Open Sans" -->
+        <link rel="stylesheet" href='{% static "css/bootstrap.min.css"%}'>                                                <!-- Bootstrap style -->
+        <link rel="stylesheet" href='{% static "css/flexslider.css"%}'>                                                   <!-- Flexslider style -->       
+        <link rel="stylesheet" href='{% static "css/templatemo-style.css"%}'>                                             <!-- Templatemo style -->
+
+        
+    </head>
+    
+    
+    <body class="page">
+        
+            
+            <!-- background images -->
+            <div class="page-bg-imgs-list">
+                <img src='{% static "img/story-bg-2.jpg"%}' id="page-1-img"  alt="About">
+                <img src='{% static "img/story-bg-2.jpg"%}' id="page-2-img" class="main-img" alt="Gallery">
+                <img src='{% static "img/story-bg-2.jpg"%}' id="page-3-img" alt="Services">
+                <img src='{% static "img/story-bg-2.jpg"%}' id="page-4-img" alt="Contact">                            
+            </div>
+
+            
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                        
+                        <div class="header">
+
+                            <!-- site title -->
+                            <header class="box box-white">
+                                <a href="javascript:void(0)" class="js-site-title">
+                                    <h1 class="box-text site-title-text">3As EMOTIONS</h1>    
+                                </a>            
+                            </header>
+                           
+                            </nav>    
+                        </div> <!-- .header -->
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
+                        <div class="content-wrapper js-content-wrapper">
+                            <!-- about -->
+                            <h3 class="preview">find out people's emotions now..</h3>    
+                        </a> 
+                            <section data-page-id="page-1" class="content js-content">
+                               
+                                <!-- <header class="box box-black margin-b-20">-->
+                                    <input type="text" id="input" class="box-text page-title-text" placeholder="type a twitter account..">
+                                    <div class="submitbtn">
+                                       <!--     <input type="submit"   value="Send" > -->  
+                                        <button id="btn"> <i class="fa-sharp fa-solid fa-magnifying-glass"></i> Analyze </button>
+                                </header>
+                                
+                                <div id="output" class="content-text">
+                                    <p> <strong>the reuslt will be here</strong></p>
+                                </div>       
+                               
+
+
+                            </section> <!-- #about -->
+
+                            <!-- gallery -->
+                            <section data-page-id="page-2" class="content content-gallery js-content">
+                                
+                                <header class="box box-black margin-b-20">
+                                    <h2 class="box-text page-title-text">Galllery</h2>
+                                </header>
+                                
+                                <div class="content-text content-text-gallery">
+                                    
+                                    <!-- <p>Credits go to <a rel="nofollow" href="http://unsplash.com">Unsplash</a> for images.</p> -->
+
+                                    <div class="flexslider-wrapper">
+
+                                        <div id="slider" class="flexslider">
+                                            <ul class="slides">
+                                                <li><img src='{% static "img/slider/slide1.jpg"%}' alt="Slide 1" /></li>
+                                                <li><img src='{% static "img/slider/slide2.jpg"%}' alt="Slide 2" /></li>
+                                                <li><img src='{% static "img/slider/slide3.jpg"%}' alt="Slide 3" /></li>
+                                                <li><img src='{% static "img/slider/slide4.jpg"%}' alt="Slide 4" /></li>
+                                                <li><img src='{% static "img/slider/slide5.jpg"%}' alt="Slide 5" /></li>
+                                                <li><img src='{% static "img/slider/slide6.jpg"%}' alt="Slide 6" /></li>
+                                            </ul>
+                                        </div> <!-- #slider -->
+                                      
+                                        <div id="carousel" class="flexslider">
+                                            <ul class="slides">
+                                                <li><img src='{% static "img/slider/thumb1.jpg"%}' alt="Thumbnail 1" /></li>
+                                                <li><img src='{% static "img/slider/thumb2.jpg"%}' alt="Thumbnail 2" /></li>
+                                                <li><img src='{% static "img/slider/thumb3.jpg"%}' alt="Thumbnail 3" /></li>
+                                                <li><img src='{% static "img/slider/thumb4.jpg"%}' alt="Thumbnail 4" /></li>
+                                                <li><img src='{% static "img/slider/thumb5.jpg"%}' alt="Thumbnail 5" /></li>
+                                                <li><img src='{% static "img/slider/thumb6.jpg"%}' alt="Thumbnail 6" /></li>
+                                            </ul>
+                                        </div>  <!-- #carousel -->
+
+                                    </div>
+                                        
+                                </div>            
+
+                            </section> <!-- #gallery -->
+                            
+                           
+                    
+                
+            
+        <!-- load JS files -->
+        <script src='{% static "js/jquery-1.11.3.min.js"%}'></script> <!-- jQuery -->
+        <script src='{% static "js/jquery.flexslider-min.js"%}'></script> <!-- Flex Slider -->
+        <script src='{% static "js/jquery.backstretch.min.js"%}'></script> <!-- Backstretch http://srobbin.com/jquery-plugins/backstretch/ -->
+        <script src='{% static "js/templatemo-script.js"%}'></script> <!-- Templatemo scripts -->
+    
+    </body>
+</html>
