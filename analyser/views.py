@@ -26,8 +26,8 @@ def analyze(request):
     driver.get(url)
     time.sleep(5)
 
-    # # Scroll to the bottom of the page
-    # driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+    # Scroll to the bottom of the page
+    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 
     # wait for the JavaScript to finish executing
     time.sleep(5)
@@ -45,7 +45,7 @@ def analyze(request):
         tweets += div.text + "\n\n"
     
     # Set up the OpenAI API credentials
-    openai.api_key ="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"
+    openai.api_key ="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"
 
     # Set the model and parameters
     model_engine = "text-davinci-002"
@@ -68,5 +68,7 @@ def analyze(request):
         'result': response.choices[0].text,
         'status': 'success'
     }
+    
+    print(data)
     response = JsonResponse(data, status=200, safe=False)
     return response
