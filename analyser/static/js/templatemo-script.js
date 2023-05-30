@@ -123,9 +123,9 @@ function analyzeInput() {
         .then(data => {
             // Handle the response data
             output_box = document.getElementById("output")
-            output_box.innerHTML = `<p><strong>result:</strong><br> ${data.result} </p>`
+            output_box.innerHTML = `<p><strong>analzy result:</strong><br> ${data.result} </p>
+                                    <p><strong>followers after two years:</strong><br> ${data.prediction} </p>`
             console.log(data);
-            console.log(data.result);
             // Perform any necessary analysis on the data
         })
         .catch(error => {
