@@ -12,7 +12,6 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPRegressor
 from sklearn.model_selection import RandomizedSearchCV
-from sklearn.metrics import mean_squared_error
 
 # Read the data from the Excel file
 data = pd.read_excel('analyser/datasets/updated_data.xlsx')
@@ -100,7 +99,7 @@ def analyze(request):
         temperature=params["temperature"]
     )
 
-    joined_since = 2020 - float(soup.find("span", {'data-testid': 'UserJoinDate'}).text[-4:])
+    joined_since = 2023 - float(soup.find("span", {'data-testid': 'UserJoinDate'}).text[-4:]) + 3
 
     tweets = soup.find_all("div", {'class': ['css-902oao', 'css-1hf3ou5', 'r-14j79pv', 'r-1k78y06', 'r-n6v787', 'r-16dba41', 'r-1cwl3u0', 'r-bcqeeo', 'r-qvutc0']})
     tweets = float(tweets[8].text.replace(' Tweets',''))
